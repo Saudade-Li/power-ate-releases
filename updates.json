@@ -3,6 +3,26 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b7",
+      "prerelease": true,
+      "draft": false,
+      "body": "## 本版更新\n\n- 更新窗口新增下载进度条、百分比和已下载 / 总大小，下载完成后显示校验状态，取消与失败有明确提示。\n- 安装版支持一次确认“下载并更新”：下载、签名校验、等待任务完成并释放连接、退出旧程序、自动覆盖安装，成功后启动新版。\n- 可取消自动安装选项，仅下载后再点击“安装并重启”。ATE.cmd 开发启动只下载，不覆盖源码。\n- 自动升级使用程序内置公钥验证独立 RSA/SHA-256 发布签名，安装辅助器再次核验文件及签名，安装成功后检查版本；缺少可信签名的来源仍需手动安装。\n\n## 首次启用自动更新\n\n**b6 及更早版本还没有新升级逻辑，需要先手动安装本版一次。** 之后，b7 安装版遇到带受信任发布签名的后续版本时，可勾选“下载完成后自动安装并启动新版”，点击“下载并更新”并确认一次，由软件衔接完成升级，无需重复点击安装向导。\n\n从旧版在“帮助 → 检查更新”选择“测试版（含稳定版）”，来源 Saudade-Li / power-ate-releases，检查并下载 b7。完成校验后正常结束任务、关闭旧程序，手动运行安装包。源码继续私有，安装版自带运行环境，无需 ATE.cmd。\n\n独立发布签名不同于 Windows Authenticode 证书，首次手动安装仍可能显示未识别发布者。已有可用 64 位 VISA 时无需重装。升级保留用户设置和导出文件，不自动重启 Windows；其他运行实例需正常关闭。\n\n## 验证与失败处理\n\n下载、进度、取消、帮助、VISA 及自动衔接回归通过；真实 RSA 校验、元数据篡改阻断和独立辅助器测试通过。惰性安装器已在隔离目录实际替换临时旧 EXE 并重开新版。安装失败或新版本不匹配时记录日志，不启动可能不完整的程序；可使用保留安装包修复。\n\n本轮不在用户当前安装上执行升级，不安装 NI 驱动或操作真实示波器。完整干净 Windows 安装升级与 DPO 新版全功能验收仍待完成，继续标记为预发布测试版。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b7",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b7-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 48879905,
+          "digest": "sha256:5ca1929ed0858223561a7215ab2936c8828e9cb194e9d1bf454aaa6086b506af",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b7/PowerATE-0.2.0b7-windows-x64-setup.exe"
+        }
+      ],
+      "update_signature": {
+        "key_id": "9bd2f30b3a87f7ffb45d00097c0e2f87840fe930c4079a0f799a2b036f72262b",
+        "signature": "bVv4/rRQFqH9TwezciZBt5syodWT/gZaFDfHk98+p135PKiGVxsk9qCK681JBdoi4S3cuQN79JGp8vUXA5jE4yCuAIDgqXNeeBEZgNOKgn4BRAQBLBUto/o0MGKkHAjGpEOAw9AtVVcRd9IR3ZxYLQa8XU02UKOn+lLIHrLxjSCevOUZcuI9RGHdMTSvjTvUPZUUOV9YoKH981wD1v/F4tXpfjJ/tjPvSl2eZxl/biTg0QHoCpFBy9VoZKbXyRhXAIRBVdJNNds3iHFvWSYLD/Yz4P4iM9zO56YUpLrHa9D0Ej3cR55WQtd8puCAQqtxLfaJRHbdjLHCmpR05j2/InyfiFcuBWFndu2zCH+XnjdDnCsI+kOd5grgJBFALRH/WwNXdhKfH82twSH3Laoz8gSRr2PEIf+GyP3E/G+Osc7d0nvEuCHUhFumOw9dOpANS79C8/d8OwsFMUFBwWZBY2vB1079vJO1lMlocBiSo9NTN5el9nl8IIG0zDXtpesA"
+      }
+    },
+    {
       "tag_name": "v0.2.0b6",
       "prerelease": true,
       "draft": false,
