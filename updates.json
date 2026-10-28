@@ -3,6 +3,26 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b8",
+      "prerelease": true,
+      "draft": false,
+      "body": "## 本版更新\n\n- 优化深浅主题切换：帮助文档不再重复整篇排版，颜色刷新合并处理；相同有效主题不重复应用全局样式。此机离线同条件剖析平均耗时减少约 74%，具体效果受电脑和窗口内容影响。\n- 统一帮助表格外框和单元格四边的颜色、宽度与实线样式，提高浅色网格对比度，调整表头和隔行底色；往返切换保持阅读位置。\n- 更新窗口移除自动安装勾选框及冗余解释，安装版直接选择“下载并更新”或“仅下载”；单独下载后可点击“安装并重启”。\n- 保持发布签名校验、下载进度、等待仪器任务与连接释放、自动覆盖及重开流程，未改变升级文件处理规则。\n\n## 从 b7 在线升级\n\n在 b7 安装版打开“帮助 → 检查更新”，选择“测试版（含稳定版）”，来源 Saudade-Li / power-ate-releases。检查发现 b8 后，保持 b7 原有自动安装选项勾选，点击“下载并更新”并确认，软件会校验后等待任务结束、退出旧程序、安装并启动 b8。升级成功后勾选框即被新界面的直接操作按钮替代。\n\n刚检查过旧清单时，等待 60 秒缓存到期后再查。其他运行实例需正常关闭，未应用编辑不会保存。没有修改 VISA 驱动，不自动重启 Windows。b6 及更早版本需先手动升级到支持自动更新的安装版。\n\n## 验证范围\n\n帮助网格、主题往返、阅读位置、明确下载/更新意图及取消/线程衔接专项通过；既有菜单、下拉高亮、编辑及 Enter 交互回归通过。更新协议、真实 RSA 签名及隔离辅助器回归通过。本轮不在用户当前安装上执行升级、不操作真实示波器或安装 NI。\n\n当前没有整目录自动备份/失败回滚机制，仍保留 b7 的安装失败日志与修复方式。DPO 全功能及干净 Windows 的完整安装升级验收仍待完成，继续标记为预发布测试版。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b8",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b8-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 48874546,
+          "digest": "sha256:02c728bfeec2bd922604141d97413f4b08bf63ea1e6fdff31ccde34c50fd243d",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b8/PowerATE-0.2.0b8-windows-x64-setup.exe"
+        }
+      ],
+      "update_signature": {
+        "key_id": "9bd2f30b3a87f7ffb45d00097c0e2f87840fe930c4079a0f799a2b036f72262b",
+        "signature": "ri44TiVigG8TvY5MqVM3cOYn1f0Pr6NFVob451WXVXRpCCORGEQ68mwBvj495P1ts0VN2w+BZaiDo52c2Q8rQ5j8fPBiUy4cJpbvWRhX8Z7pWw/pqY2VgpqwHEx48BdghFopLTCvyqWqCke07geoH5L4xwYIGVZd9Q3spIz4iPbSgyOxh3hfE3E577JTuSPuGipjH+MIyEBKrWkm1vdPuzUw4+5q+f2aQ6GZPUNi735u8qhdA5fR4MNwuPRKnpFMpAsju4xH3anp8SSn3daiNdluaQ2NL8aGhS8p6KsaZfdLuAXfQ2AjIs0bkjoKcypjx3ElVFmUgqlZ2xaIRPM5L8H4UseIEH8KwUsk2QKkBkKxMB+DnxT2CJxj98wsTBliiRx1YxIvrY6rVkB8eW7cqgJsuh9+CYErSeamGuHmCVoVpZUQHHCbT84IEeczdAgGurbo/qdbnBw6vUy8xVLVbwOEQHBTXiTyhWQcoh0vCrWWBcyTWOEvjNmUP42tSQeI"
+      }
+    },
+    {
       "tag_name": "v0.2.0b7",
       "prerelease": true,
       "draft": false,
