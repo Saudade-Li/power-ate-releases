@@ -3,6 +3,22 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b5",
+      "prerelease": true,
+      "draft": false,
+      "body": "## 本版更新\n\n- 默认更新查询改为公开静态清单，增加 60 秒缓存，避免依赖 GitHub REST API 匿名配额；自定义仓库的 API 限流会提示恢复时间并等待。\n- 更新渠道显示为“稳定版”和“测试版（含稳定版）”，只提示高于当前程序的版本。\n- 安装向导可选择简体中文或 English，安装说明、按钮、快捷方式及 VISA 引导跟随选择。\n- 安装前检测可用的 64 位 VISA，已有运行库时自动跳过驱动引导。缺少时衔接 NI 官方下载、安装器选择、NI 发布者签名验证、启动安装及复检，也可明确选择稍后安装。\n\n## 安装与升级\n\n旧安装版如已遇到 HTTP 403，请从本发布页手动下载并升级到本版一次。当前测试包未签名，请正常结束仪器任务、关闭旧程序后手动安装；用户设置及导出文件保留。安装包自带运行环境，无需 Python、Conda 或 ATE.cmd。\n\n本机已安装兼容 VISA 时无需重装。缺少 VISA 的电脑需按 Windows 版本选择兼容 NI-VISA；NI 账号登录、许可协议、管理员授权及必要重启由使用者完成。在线安装器转交 NI Package Manager 后，完成其流程再点击复检。主程序语言未因安装向导语言选择而改变。\n\n## 验证范围\n\n33 项回归、中英文安装器四种无窗口预检、36 个冻结模块及 18 个资源比对、Windows 原生离线自检均通过。本轮未执行驱动安装或真实示波器操作。干净电脑上完整 NI 安装及 DPO 全功能实机验收仍待完成，本版保持预发布测试版标记。\n\n安装包 SHA-256：`90c0cea35adfa2636570366a76be49ee31863d4fcbf832fc8dcac16563eac6cc`\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b5",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b5-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 48859083,
+          "digest": "sha256:90c0cea35adfa2636570366a76be49ee31863d4fcbf832fc8dcac16563eac6cc",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b5/PowerATE-0.2.0b5-windows-x64-setup.exe"
+        }
+      ]
+    },
+    {
       "tag_name": "v0.2.0b4",
       "prerelease": true,
       "draft": false,
