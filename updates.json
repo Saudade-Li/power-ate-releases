@@ -3,6 +3,22 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b6",
+      "prerelease": true,
+      "draft": false,
+      "body": "## 本版更新\n\n- 帮助菜单按“开始使用 / 仪器操作 / 数据与维护”分组，按 F1 打开操作指南与目录。\n- 新增常驻分级目录、正文可点击索引、返回目录及 Ctrl+F 内容查找，14 个章节覆盖常用操作与异常处理。\n- 统一深浅主题下的标题、段落、表格及链接排版；本版本更新说明共用阅读器。\n- 重新整理安装、VISA、更新渠道和下载步骤，明确安装版从快捷方式启动，ATE.cmd 用于开发环境。\n\n## 从 b5 升级\n\n在“帮助 → 检查更新”选择“测试版（含稳定版）”，来源为 Saudade-Li / power-ate-releases，检查后下载本版。静态更新清单保留，查询无需 GitHub 登录，也不占用 REST API 匿名额度。刚检查过旧清单时可等待 60 秒缓存到期后再查。\n\n当前测试包未签名，下载并完成校验后，请正常结束仪器任务、关闭旧程序，再手动运行安装包。安装版自带运行环境，安装后从开始菜单或桌面快捷方式启动，无需 ATE.cmd。用户设置和导出文件保留；已有可用 64 位 VISA 时无需重装。\n\n## 验证范围\n\n帮助导航、菜单、查找、主题及更新回归通过，并核对冻结源码和包内资源。Windows 原生自检仅使用离线模拟，不操作真实示波器或安装 NI 驱动。干净 Windows 与 DPO 新版全功能验收仍待完成，本版继续标记为预发布测试版。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b6",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b6-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 48874448,
+          "digest": "sha256:9915c10c91a55baedba648c95d39566554685d4f53d5c32eeca5712ec07cb1e4",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b6/PowerATE-0.2.0b6-windows-x64-setup.exe"
+        }
+      ]
+    },
+    {
       "tag_name": "v0.2.0b5",
       "prerelease": true,
       "draft": false,
