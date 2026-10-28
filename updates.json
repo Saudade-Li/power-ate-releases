@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "repository": "Saudade-Li/power-ate-releases",
+  "releases": [
+    {
+      "tag_name": "v0.2.0b4",
+      "prerelease": true,
+      "draft": false,
+      "body": "## 本版更新\n\n- 软件默认更新源设为 `Saudade-Li/power-ate-releases`，检查与下载安装包无需 GitHub 登录。\n- 默认渠道为“测试版与稳定版”，源码继续独立私有托管。\n- 下载完成后提示手动安装；当前测试包未签名，自动安装的签名要求保持开启。\n\n## 已包含的修正\n\n- 触发电平输入框取消悬停提示，倍率、仪器步进及实际回读说明保留在帮助中。\n- 恢复“通道标签”按钮的深浅主题边框。\n- DPO 未定义测量位显示“未设置”；触发电平被仪器调整时显示请求与实际值，不重复乘除探头倍率。\n- DPO 各通道增加 1 MΩ/50 Ω 输入阻抗选择并回读核对，MDO 相应字段仍只读。\n- 采集状态 Run/Single 显示绿色、Stop 显示红色；DPO 标签菜单说明其型号能力边界。\n\n## 安装与更新\n\n下载下方 Windows x64 安装包及可选 SHA-256 校验文件。安装包自带运行环境，无需 Python/Conda；USB 仪器另需系统 VISA 驱动。请正常结束仪器任务、关闭旧程序后手动安装。\n\n旧版软件可在“帮助 → 检查更新”填写所有者 `Saudade-Li`、仓库 `power-ate-releases`，选择“测试版与稳定版”。当前版本仅显示比自己更新的安装包，已安装本版时无更新属于正常结果。\n\n## 验证与限制\n\n本版完成更新回归测试、冻结源码/资源比对及 Windows 离线模拟自检，不涉及真实示波器操作。DPO 新版全功能及无 Python/Conda 的干净 Windows 环境仍待完整实机验收。本版为未签名预发布测试包，下载后手动安装；不包含软件账号或激活限制。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b4",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b4-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 48847059,
+          "digest": "sha256:f8870c1aa00347b3fde706c60d8f00ca3a6324a3bd11dd66e5d5a208941a88aa",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b4/PowerATE-0.2.0b4-windows-x64-setup.exe"
+        }
+      ]
+    }
+  ]
+}
