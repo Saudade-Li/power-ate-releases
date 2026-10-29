@@ -3,6 +3,26 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b9",
+      "prerelease": true,
+      "draft": false,
+      "body": "## 本版更新\n\n- DPO5034B 带宽新增 250 MHz 和 FULL 全带宽请求，保留 20 / 350 MHz 与带单位数值输入，超过型号标称 350 MHz 的请求会被拒绝。\n- 新增逐通道“DSP 自动 / 仅模拟”和实际 DSP 生效状态。AUTO 只表示允许滤波，不保证当前采样率及采集条件下一定生效。\n- 参数修改保留草稿，点击当前通道应用后写入并回读。FULL 或数值请求被探头/仪器档位限制时，显示请求与实际，不伪造成功值；不自动强制采样率或联动其它通道。\n- MDO 不展示或调用未适配的 DPO DSP 控件。新增带宽能力/参数校验/显示与 SCPI 分离，移出公共 Tektronix 解析函数，减少型号驱动间耦合。\n- 帮助补充带宽、DSP 及型号边界。通用手册的 150/500 MHz 等枚举并非 DPO5034B 已确认固定档位，不将其它系列选项直接加入本机列表。\n\n## 更新方式\n\nb8 安装版在“帮助 → 检查更新”选择“测试版（含稳定版）”，发现 b9 后点击“下载并更新”确认一次。b7 安装版沿用其勾选自动安装的流程；b6 及更早版需先手动升级一次。刚查询过旧清单时等 60 秒缓存到期再试。\n\n保持同一发布公钥、下载大小/摘要与发布签名校验、连接释放和独立安装辅助器。升级不会自动重装 VISA 或重启 Windows；其他实例需正常关闭，未应用编辑不会保存。当前没有整目录自动备份/失败回滚，沿用既有日志和安装包修复方式。\n\n## 验证范围\n\n283 项协议/控制/测量/波形/预设/发现、90 项 GUI、48 项执行/报告/中断/图片、17 项帮助/更新回归通过，共 438 项。深浅主题及较窄窗口离线检查通过。\n\n本轮没有连接或改动真实示波器，不安装 NI 或在用户当前安装上执行升级。新增命令在 DPO5034B 当前固件及探头条件下仍需实机验收；Mock 与假 transport 不能作为真实测量或硬件支持的最终证明。本版继续标记为预发布测试版。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b9",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b9-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 48893023,
+          "digest": "sha256:8730a02f2b6219c1d4e5a538e70e81835e6be4bb98ced31fba4a2f854dee1859",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b9/PowerATE-0.2.0b9-windows-x64-setup.exe"
+        }
+      ],
+      "update_signature": {
+        "key_id": "9bd2f30b3a87f7ffb45d00097c0e2f87840fe930c4079a0f799a2b036f72262b",
+        "signature": "T4438HwExkUEhUkC06zFHMvWRWzprkt1HiwdDfxl4O3ZpCAXa/RkGmkfQsb0t0+bHLXJ7XBiLC4TpfmXUYEtrokxH6h8RAvVQVDCkjYYO1B73Cigc9yRO899QDwc5IG0w8CLHW4RUXcor6fjyjoMdPvQI9hDhWflaRrCllRch4CTktAa8ebeymdF85zTlrIerWV5FLvUkuuGtcWV4ug+Vq36SwNIIZoAkGny6fYRI1JN0xGRBfAopsWF9fQRwq0vFKn/RmUxNs7Py2vcpAxTdg8oIlY/bYaPQFZTUY5odsTyFZeghP1OzOMo35eWyjiZOVLDzFDudwtTHIrcuPWG6HckrrnOC93FxHj3h5SfTj/wi4gFoC7GQlJo7W6v8RW2nlcebNMPhNTGYVYVbu37fPaQ9Aer1oUbQtsDczdAykp/qUL6LACms+SDFQL9wlM5mEWwsMHcpbhfcaCWbCyGfxAR5LECW09JdvCnQGuyeWp3DiW8J/d5HYVLoGWVoRtw"
+      }
+    },
+    {
       "tag_name": "v0.2.0b8",
       "prerelease": true,
       "draft": false,
