@@ -3,6 +3,26 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b10",
+      "prerelease": true,
+      "draft": false,
+      "body": "## 适配范围\n\n**全部通道一并导出目前仅适配 MDO3014，其他型号暂未接入。** 此限制针对“全部已显示模拟通道”批量导出，其他型号原有功能以其既有支持范围为准。\n\n## 本版更新\n\n- MDO3014 支持将同一冻结记录中全部已显示模拟通道导出为一个合并 CSV，共享序号和时间，每通道保留幅值、原始码及 V/A 等实际单位；可选逐通道 PNG/SVG。\n- 增加“使用完整记录”及起止点说明。起止点从 1 开始并包含两端，结束点 0 表示记录末尾。\n- MDO3000 标签支持逐通道回车或应用后显示：CH1 显示后，再应用 CH2 会保留 CH1。未显示文字先在本机备份，再暂时从仪器中清空；全显可恢复，留空应用表示真正删除。启动及普通同步不修改标签。\n- 修复连续修改标签时反复打开仪器菜单导致的屏闪。首次启用、全隐后首次或重连后首次仍需一次显示确认，后续修改只更新文字。\n- 改善长保存路径的显示、设备任务排队、异常清理、日志大小控制及大记录导出的内存占用。\n\n## 使用说明\n\n批量导出前请先在仪器上显示目标通道并停止采集；导出期间勿重新采集或更改仪器设置。隐藏通道不会自动开启。\n\n标签恢复文字保存在当前 Windows 用户的 `%APPDATA%\\PowerATE\\scope_labels`，不要当作缓存删除。关闭软件不会自动全显；恢复请点击“显示全部标签”。换电脑不会自动携带这些备份。\n\n## 更新方式\n\n在“帮助 → 检查更新”选择“测试版（含稳定版）”，发现 0.2.0b10 后选择“下载并更新”；也可下载本页 Windows x64 安装包手动安装。刚查过旧清单时可等约 60 秒后再检查。b6 及更早版需先手动升级一次。\n\n沿用原发布公钥、下载大小、SHA-256 和发布签名校验。升级前正常结束仪器任务并保存所需编辑；不会自动重装 VISA 或重启 Windows。\n\n## 验证范围\n\n功能基线 617 项回归通过。MDO3014 v1.30 已完成四通道各 100 万点完整及部分记录导出、与独立单通道传输逐点比对，以及逐通道标签显示、全显恢复和仪器设置恢复的实机验证。本版另完成相关界面及更新回归、冻结源码核对和 Windows 原生离线自检。模拟结果不作为其他型号已适配的证明。\n\n本版继续标记为预发布测试版。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b10",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b10-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 48995776,
+          "digest": "sha256:a0938d7090970d5da4aeddeee8888aea31025f7bbcfc748d4c792d1b71c32ea6",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b10/PowerATE-0.2.0b10-windows-x64-setup.exe"
+        }
+      ],
+      "update_signature": {
+        "key_id": "9bd2f30b3a87f7ffb45d00097c0e2f87840fe930c4079a0f799a2b036f72262b",
+        "signature": "flPrkEU7AQl/mEGQxalbZ5FTobmqgw7nKDLVAWVRD4pR0ObCDL4+INV5NBg1+Q9Rs7eZ/fSXcoxr8Fq9HF5nSBBO+nMGoGFTOI9gXkmPsG+v4VciMY8SnYRci9PTz2Nvk2fa1qG6hk2T6XBaGJ0n6zIxteyexq72o3yxTfrcA3hjAtN4e71l4tXw1OH69N5A0+36jH1DVzhDTSQGvQ+ahxAPf/nFd2dev/KJ51DFEy/EEx/PsJWsKVxFG0jNNVZWSPsflPnfLr8c737b2QLkDcDfDdBhyeVwP70tDrAAhnukdJf8hR4vClEWDKOYbOGYATCdBvybQE7zlKLMf4fcj8hXugGvPUsve+sX+obmJ+4MXuG0E2xEbcnFfNUbs6ms9FPFeexdzZUnt80qGE0T+VSSYm1Lv3QO85F7Ey9Hz8v8b3mj0RG8iQvV2uU3C/tojqKWGgL+72gAX/v4uhOJRMByN9b8QTmlYFGDYe9ESue8FGemShL/SW0EEQGSZo3s"
+      }
+    },
+    {
       "tag_name": "v0.2.0b9",
       "prerelease": true,
       "draft": false,
