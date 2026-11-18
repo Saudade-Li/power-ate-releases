@@ -3,6 +3,26 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b11",
+      "prerelease": true,
+      "draft": false,
+      "body": "# Power ATE 0.2.0b11 · Windows x64 测试版\n\n当前支持 Tektronix MDO3014、DPO5034B 和 Chroma 62024P-600-8。ALL 多通道导出仅适配上述两款示波器；AC 源和电子负载尚未接入。\n\n- 示波器：新增 DPO5034B 的 ALL 多通道导出及逐通道标签管理；精简导出页面，范围与使用说明集中到操作指南。MDO3014 保留原有多通道导出能力。\n- DC 源：新增电压／限流设置、V/A/W 自动回读、输出状态、OVP／OCP、斜率、定时输出、有限通断循环、电压扫描和内置电压渐变。输出开启时可显式应用电压与限流草稿；保护及斜率仍要求输出关闭。暂不包含示波器联动。\n- 安全交互：示波器和 DC 参数禁止滚轮改值；DC 断开和正常退出前先关断并核对 OFF，未确认时保留窗口，允许在面板确认关闭后人工勾选退出。连接或编辑不会隐式开启输出，通信失败不自动重试设置或 ON／OFF。\n- 型号范围：Chroma 工作电压 0–600 V、限流大于 0 至 8 A，总输出受 2400 W 功率包络限制。范围解锁不代表完成高压或带载性能验证；OVP／OCP 范围及任务约束见操作指南。\n- 连接：示波器和 DC 源均支持 auto 直接连接。示波器初次识别及读取使用独立只读通信进程，提供取消和约 30 秒整体超时，启动不主动加载 VISA。对历史偶发未响应已增加隔离与超时保护，本轮未复现当次故障，不能断言已定位到某条特定驱动调用。\n- 界面：侧栏按仪器切换，保留平滑动画及固定 DC 图标；深浅背景采用中性灰阶，Segoe UI／微软雅黑 UI 字体，新增六种强调色并保存偏好。帮助正文、链接、表格和目录同步主题；“检测设备”和“放弃编辑并读取”的边框与普通按钮保持一致。\n- 更新：启动后在原有“就绪”一行的右侧检查版本，30 秒内处理网络波动；未发现新版到时隐藏，发现新版持续保留并由用户点击进入更新。不自动下载安装，不增加额外底栏，左侧竖栏延伸到底部。\n- 手册：帮助中离线包含两款示波器的用户／编程手册及 Chroma 使用与编程合订本，保留来源和完整性校验。\n\n验证边界：MDO3014 的四通道百万点导出及标签已完成先前实机验收；DPO5034B 已验收当前万点四通道完整／部分记录、隐藏通道跳过及逐点一致性，另完成多次新窗口只读连接。Chroma 已完成低压空载设置、回读及任务验证；未进行高压输出、带载限流或其他型号验收。物理拔 USB、强退或断电时，软件无法保证关断，请使用仪器面板及硬件保护。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b11",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b11-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 86680296,
+          "digest": "sha256:aa20f9e160cd415bdafe5eacec90540ce2e79dab626bbdbff832bc42eb0fefee",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b11/PowerATE-0.2.0b11-windows-x64-setup.exe"
+        }
+      ],
+      "update_signature": {
+        "key_id": "9bd2f30b3a87f7ffb45d00097c0e2f87840fe930c4079a0f799a2b036f72262b",
+        "signature": "oh3V9RQC5qoVFgrJ2xPeYH3rZI8u5VUZxjmJlFq3QpojIfxH7tM/6nIrRcsO0CL+f1E/AKPa/0soLgq5k+qqECQrarMjbcgbjYuWtlSBcw3RewmekBCmPnnSS7P5+xA8KsteWof/b9620dFRpCfZM8xgpwoQdtnIRbjFjIHNnC9XSxb6U7kmkONpV98zp0Ah9XrMeirYF2LriRayBlSV16IGxchergRmG7r009RpG/iZIWQabBbTQSBm2OCrIsKHr6529VKA1s01qfx1gaykyaUr4HpJ/I2d5hJYTnFg6f1A+Dst2JJdtHvveXLUTrA1pz20P8WRrFO42UsK7B6LOIgMeS7ntyBJj9ij2PtNd9y86yh17qJPKgncG+vGFy3QG9RFxJ9szgGjGmhfraBkCXs6ygGESn2KQBta48C0h2F/L8osH0bD+CRB7O00k43Yth/biuG0BRFpkIpCk8rOo5osijw/sIfTA+GcbSJ61xD7h4TcC75azISp0gECEIp5"
+      }
+    },
+    {
       "tag_name": "v0.2.0b10",
       "prerelease": true,
       "draft": false,
