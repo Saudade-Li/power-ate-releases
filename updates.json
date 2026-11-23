@@ -3,6 +3,26 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b12",
+      "prerelease": true,
+      "draft": false,
+      "body": "# Power ATE 0.2.0b12 · 电子负载与帮助更新\n\n本版接入 ITECH IT8816B，并合并启动、侧栏和操作文档更新。\n\n- 电子负载支持恒流、恒压、恒阻、恒功率、动态、电流序列、保护、起载、触发、感测、采样与操作记录。\n- 稳态输入 ON 时可调整当前设定，点击“应用修改”或按回车提交，保持原输入状态；模式、量程和功能配置在 OFF 时设置。\n- DC 源与负载页面首次打开时创建，后续切换复用连接和草稿。\n- 侧栏与标签页采用缓入缓出动画，图标和文字按滑块位置着色，改善连续切换。\n- 自动同步与操作记录保留编辑内容、阅读位置和选区。\n- 完整整理操作指南、版本说明和安装说明，采用操作步骤、参数含义、适用条件与结果查询的写法。\n- 帮助补充 IT8816B 电流斜率档位、单位和原厂文档页码链接。\n\n## 下载与安装\n\n下载 `PowerATE-0.2.0b12-windows-x64-setup.exe`，同页 `.exe.sha256` 可核对文件。程序包含 Python 与 Qt，USB 仪器使用兼容的 64 位 NI-VISA 或 TekVISA。\n\n已有安装版可在“帮助 → 检查更新”选择“测试版（含稳定版）”，使用“下载并更新”。程序校验大小、SHA-256 和发布签名，等待任务释放连接后安装。手动安装前结束任务并正常退出旧程序，个人设置及导出文件保留在原目录。\n\n按 F1 查看完整操作指南，测试工况按仪器额定值、档位、探头和实际接线选择，结果结合原始记录与实测波形评估。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b12",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b12-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 86760585,
+          "digest": "sha256:4cbbd8e631ff61dcdbe3349738df298775b4821508e9d55155ad4046b81b123c",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b12/PowerATE-0.2.0b12-windows-x64-setup.exe"
+        }
+      ],
+      "update_signature": {
+        "key_id": "9bd2f30b3a87f7ffb45d00097c0e2f87840fe930c4079a0f799a2b036f72262b",
+        "signature": "uUPY9tB/UeY2lR7flyWP2P0c1gYucq8LvNf4e411ciG/yjeYnscYrG0caZXX92G/uAgue3RyD3c9l9f9rU7Foo70XFnL3KpT3U4dCoD3E+ovFZJpvqF59bsQU1WSb9Al/J08VVY8iB2umG53h5JIkAC6UPOJcdITaM66U5VCuboFOS37aaBhXig0MYuaBVUMQ7Y9R6swQxAaGP9pWHZ8B+lWp5GE7lVfjVokZu62yT/u0MuHTrI0YJqoxJWwLTj6WXkn+Xx1nZbhIL+IvMdcmf7ULNMsRNP6vSdxDnkfwiPwvCided1ogdk8CnaqC7Zs72QinYs2qVm6w9QOZ+KGrUJhByuymCiH08qVTaXfkEIzdkRAxmH+LSiM2JhCU+2vD4LsuHbho2ckNcusneEScxxh5aKoJEf3xnCEe5DVX7+Z4voa7xFwGzrpmhUmzk/YETwtydbAmenMftE9nXAcvDCvTFn2x2PO9jZRbZ5GNsBSETvpirnSpsxHIixlp9FQ"
+      }
+    },
+    {
       "tag_name": "v0.2.0b11",
       "prerelease": true,
       "draft": false,
