@@ -3,6 +3,26 @@
   "repository": "Saudade-Li/power-ate-releases",
   "releases": [
     {
+      "tag_name": "v0.2.0b13",
+      "prerelease": true,
+      "draft": false,
+      "body": "# Power ATE 0.2.0b13 · Fluent 联调界面、并发通信与帮助升级\n\n本版升级为 Win11 Fluent 多机联调工作台界面，根治多仪器并发通信中断问题，显著提升电子负载轮询与启动速度，并重构润色操作指南。\n\n- **多机联调总览**：顶部常驻示波器、DC 源与电子负载状态胶囊，支持点击切页、「一键全连」、「一键全停 OFF」与通电红橙警示灯带；侧栏支持实时绿/红/橙状态原点，文件菜单可按需隐藏 AC 源占位入口。\n- **并发通信修复与轮询提速**：引入线程安全的 VISA `ResourceManager` 引用计数，解决双机同时在线时互相切断会话的问题；示波器扫描自动跳过电子负载；电子负载只读轮询采用热连接复用（写控仍保留独立校验），实测平均轮询耗时显著降低。\n- **高清截图预览与浅色适配**：采用 Lanczos 抗锯齿缩放解决缩小预览模糊问题，完成浅色模式预览底色适配；新增示波器高频快捷键（`F5`、`Ctrl+Shift+C`、`Ctrl+S`、`Ctrl+Shift+R`）与窗口/分栏记忆。\n- **DC 源 / 电子负载实时监控与防抖动**：新增功率负载率、平滑趋势曲线、4 项峰值统计与常驻记录预览；展开「保护与斜率」等折叠项不再导致上方卡片上下撕扯或横向跳动；调柔和橙色、粉色等强调色。\n- **冷启动提速与操作指南重构**：优化冷启动耗时；将「DC 源 Chroma 62024P」提升为独立帮助大章并同步菜单入口，全文逐段润色对齐最新界面。\n\n## 下载与安装\n\n下载 `PowerATE-0.2.0b13-windows-x64-setup.exe`，同页 `.exe.sha256` 可核对文件。程序包含 Python 与 Qt，USB 仪器使用兼容的 64 位 NI-VISA 或 TekVISA。\n\n已有安装版可在“帮助 → 检查更新”选择“测试版（含稳定版）”，使用“下载并更新”。程序校验大小、SHA-256 和发布签名，等待任务释放连接后安装。手动安装前结束任务并正常退出旧程序，个人设置及导出文件保留在原目录。\n\n按 F1 查看完整操作指南，测试工况按仪器额定值、档位、探头和实际接线选择，结果结合原始记录与实测波形评估。\n",
+      "html_url": "https://github.com/Saudade-Li/power-ate-releases/releases/tag/v0.2.0b13",
+      "assets": [
+        {
+          "name": "PowerATE-0.2.0b13-windows-x64-setup.exe",
+          "state": "uploaded",
+          "size": 86039522,
+          "digest": "sha256:0bbdba061a1ef3dec46afd84211cecbb399d03f6f248a2de151fa26c8dc1e061",
+          "browser_download_url": "https://github.com/Saudade-Li/power-ate-releases/releases/download/v0.2.0b13/PowerATE-0.2.0b13-windows-x64-setup.exe"
+        }
+      ],
+      "update_signature": {
+        "key_id": "9bd2f30b3a87f7ffb45d00097c0e2f87840fe930c4079a0f799a2b036f72262b",
+        "signature": "KuCptblKpt4oMxVYwi2yS6vUHz1ovdgOXI3Mv7kQYI16vUuWErPczOg+hZn6vB4w2OtoEX2tmxRuY5ld/9HnXWLhLVg24l6ulBVJa76GwJfLnz5ffMIbZs84nP36onkIXfqZuQbZIec7M+x1NHhP8vOLVvnwV4f2h4cAa22wdYHkFP4wgU7BihcNiaDSLjkyUHbvzJSoPvEc7PqpkIlnipI/cO/vnVOGzF0GUEcfgtAOAfllhxsWAol7qQng4fevZ8BbylxHK8UyWu91wHo8PJPG4on++kBQtm98B9fTRbph7lqwrZ0fi6iJss7dW1BwlSnZqqv/hMiDQBcueJJmT/IKujzmNr4Mj87fhp//99Y/34OJy8l/GL27MKt6Y9aEnpYIhDN1vJwBJTky7iATcZ6NX4yOChVHGxMTxS28xvrE5As6/m6ZAlDbAtbcjtK2QAyBWUuvAn0JSVLiqnJcxtyqLJjYvpVTjku7FhnHaZjGGBGCxkOzbBRiNktOzGue"
+      }
+    },
+    {
       "tag_name": "v0.2.0b12",
       "prerelease": true,
       "draft": false,
